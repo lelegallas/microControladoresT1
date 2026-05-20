@@ -18,11 +18,13 @@ while True:
     
     time.sleep(5)
     # Verifica valor da luz
-    if valor_umidade > 60000:
-        saida.value(0)  # Liga pino 22
+    if valor_umidade > 60000
+        #Liga a bobina duas vezes
+        saida.value(0)  
         time.sleep(0.5)
         saida.value(1)
-        print("Pino 22 ATIVADO")
+        saida.value(0)  
+        time.sleep(0.5)
+        saida.value(1)
+        print("Jogou água")
     print("----------------------")
-
-    time.sleep(1)
